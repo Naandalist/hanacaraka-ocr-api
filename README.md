@@ -61,4 +61,4 @@ Tests stub inference and do not validate the real checkpoint. Perform a live cro
 
 ## Model
 
-Author: Simon Harms; license: MIT. The v6 model is distinct from the older `aksara-ts` CRNN ONNX model.
+This API builds on the TrOCR Javanese Synthetic v6 model developed by Simon Harms and released under the MIT license. Unlike the earlier CRNN-based ONNX OCR model used in `aksara-ts`, this version uses a Transformer-based approach to recognize printed Javanese script. We use it here as the recognition engine while keeping image validation, preprocessing, and HTTP integration within the FastAPI service.
